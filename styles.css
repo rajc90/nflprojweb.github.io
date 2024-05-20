@@ -1,20 +1,20 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #1e1e1e, #2c3e50);
-    color: #000000;
+    background: linear-gradient(to right, #1e1e1e, #2c3e50); /* Background with dark blue and lighter blue */
+    color: #000000; /* Text color set to black */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Allow scrolling */
     min-height: 100vh;
-    overflow: auto;
+    overflow: auto; /* Make page scrollable */
     position: relative;
 }
 
 header {
     width: 100%;
-    background-color: rgba(0, 34, 68, 0.9);
+    background-color: rgba(0, 34, 68, 0.9); /* Dark blue background */
     padding: 20px 0;
     position: fixed;
     top: 0;
@@ -35,25 +35,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffffff; /* White text color */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #c60c30;
+    color: #c60c30; /* Red text color on hover */
 }
 
 .container {
     text-align: center;
     padding: 80px 20px 20px;
-    background: rgba(244, 244, 244, 0.8);
+    background: rgba(255, 255, 255, 0.9); /* White background with some transparency */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 800px;
-    margin-top: 60px;
+    margin-top: 100px; /* Adjusted to account for fixed header */
     position: relative;
     overflow: hidden;
 }
@@ -74,7 +74,7 @@ nav ul li a:hover {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #002244;
+    color: #002244; /* Dark blue color */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -92,8 +92,8 @@ video {
 button {
     padding: 15px 30px;
     font-size: 16px;
-    color: #ffffff;
-    background-color: #c60c30;
+    color: #ffffff; /* White text color */
+    background-color: #c60c30; /* Red background color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -103,7 +103,7 @@ button {
 }
 
 button:hover {
-    background-color: #a50d2d;
+    background-color: #a50d2d; /* Darker red on hover */
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(198, 12, 48, 0.7);
 }
@@ -172,41 +172,14 @@ body::before {
 /* Image styles */
 img {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Reduced max-width for smaller image size */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: block;
-    margin: 0 auto;
+    margin: 20px auto; /* Added margin for spacing */
 }
 
 /* Card styles for sources page */
 .card {
-    background: #ffffff;
-    color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-}
-
-.card h2 a {
-    color: #002244;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.card h2 a:hover {
-    color: #c60c30;
-}
-
-.card p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #1e1e1e;
-}
+    background: #ffffff; /* White background for cards */
+    color: #000000; /* Black text color */
